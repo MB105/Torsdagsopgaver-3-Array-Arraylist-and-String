@@ -27,13 +27,23 @@ booleans.add(true);
   
 printList(cities);
 
+int sum=sum(numbers);
+println(sum);
     
 }
 
  void printList(ArrayList<String> listToprint ) {
  for(String i:listToprint){
  println(i);
-
+ }
 
 }
-}
+int sum(ArrayList<Integer>numbers){
+  int sumOfIntegers=0;
+  for(int i:numbers){
+  sumOfIntegers +=i;
+  }
+  return sumOfIntegers;
+
+
+ }
